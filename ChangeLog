@@ -1,12 +1,3 @@
-2020-02-02  Marcus Dillavou  <line72@line72.net>
-	* ISSUE-76 - Pass configuration to BaseMap
-
-1.6.1
-==========
-2020-01-26  Marcus Dillavou  <line72@line72.net>
-	* ISSUE-72 - Use own icon factory
-	* ISSUE-70 - Update Dependencies
-
 1.6.0
 ==========
 2020-01-24  Marcus Dillavou  <line72@line72.net>

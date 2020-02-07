@@ -58,13 +58,12 @@ class ExploreContainer extends Component {
               </div>
 
               <div className="w3-hide-medium w3-hide-small RouteContainer-header">
-                <h1 className="RouteContainer-h1">Birmingham Transit</h1>
+                <h1 className="RouteContainer-h1">Go Columbus</h1>
               </div>
 
               <div className="">
                 <FirstRunHint key="first-run-dialog" isFirstRun={first_run} />
                 <BaseMap
-                  configuration={this.props.configuration}
                   initialViewport={this.props.initialViewport}
                   onBoundsChanged={this.props.onBoundsChanged}
                   onViewportChanged={this.props.onViewportChanged}

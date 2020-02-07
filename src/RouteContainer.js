@@ -30,9 +30,9 @@ class RouteContainer extends Component {
     constructor() {
         super();
 
-        this.configuration = new Configuration();
+        let configuration = new Configuration();
 
-        let agencies = this.configuration.agencies.map((a) => {
+        let agencies = configuration.agencies.map((a) => {
             return {name: a.name,
                     visible: true,
                     parser: a.parser,
@@ -285,7 +285,6 @@ class RouteContainer extends Component {
         if (this.state.mode === MODE.STOP) {
             return (
                 <StopEstimatesContainer
-                  configuration={this.configuration}
                   stopOverlay={this.state.stopOverlay}
                   onClose={this.onStopOverlayClosed}
                   initialViewport={this.initialViewport}
@@ -294,7 +293,6 @@ class RouteContainer extends Component {
         } else {
             return (
                 <ExploreContainer
-                  configuration={this.configuration}
                   agencies={this.state.agencies}
                   isFirstRun={this.storage.isFirstRun()}
                   onStopClicked={this.onStopClicked}

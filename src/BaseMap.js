@@ -14,11 +14,12 @@
 
 import React, { createRef } from 'react';
 import { TileLayer } from 'react-leaflet';
+import Configuration from './Configuration';
 import BoundsMap from './BoundsMap';
 
 class BaseMap extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
 
         // pulled from:
         //  https://leaflet-extras.github.io/leaflet-providers/preview/
@@ -35,7 +36,7 @@ class BaseMap extends React.Component {
             }
         }
 
-        let configuration = this.props.configuration;
+        let configuration = new Configuration();
         this.mapRef = createRef();
 
         this.state = {
