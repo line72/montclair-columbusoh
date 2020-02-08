@@ -1,4 +1,4 @@
-# Go Grand Rapids
+# Go Columbus
 
 Real Time Tracking of the Buses for Columbus, OH
 
