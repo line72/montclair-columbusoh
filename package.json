@@ -1,6 +1,6 @@
 {
   "name": "montclair-columbusoh",
-  "version": "1.8.1",
+  "version": "1.12.0",
   "private": true,
   "dependencies": {
     "gtfs-realtime-bindings": "0.0.5",
